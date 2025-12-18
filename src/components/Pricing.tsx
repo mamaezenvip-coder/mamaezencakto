@@ -7,11 +7,11 @@ const includes = [
   "App multifuncional MamãeZen completo",
   "Guia da Mãe Ninja 2.0 com técnicas chinesas",
   "5 técnicas exclusivas inclusas 🎁",
-  "Bebê 3D Vitalício + Cinema do Bebê",
-  "Sistema de Emergência GPS",
-  "Biblioteca de Músicas Relaxantes",
-  "Atualizações Vitalícias",
-  "Suporte Prioritário 24h"
+  "Bebê 3D vitalício + Cinema do Bebê",
+  "Sistema de emergência GPS",
+  "Biblioteca de músicas relaxantes",
+  "Atualizações vitalícias",
+  "Suporte prioritário 24h"
 ];
 
 const Pricing = () => {
@@ -22,24 +22,24 @@ const Pricing = () => {
 
 
   return (
-    <section id="oferta" className="py-6 md:py-20 px-3 bg-[#1a1a2e]">
-      <div className="container mx-auto max-w-6xl">
+    <section id="oferta" className="py-10 md:py-16 px-4 bg-[#1a1a2e]">
+      <div className="container mx-auto max-w-5xl">
         {/* Emotional Copy */}
-        <Card className="p-5 md:p-8 bg-[#252542] border-2 border-primary/20 mb-6 md:mb-10 animate-fade-in">
-          <div className="space-y-4 text-gray-200">
+        <Card className="p-5 md:p-6 bg-[#252542] border-2 border-primary/20 mb-8 animate-fade-in">
+          <div className="space-y-3 text-gray-200 text-sm md:text-base">
             <p className="flex items-start gap-2">
-              <span className="text-primary mt-1">✓</span>
+              <span className="text-primary mt-0.5">✓</span>
               <span>90% das mães sofrem em silêncio por se sentirem insuficientes. 🥺 Mas saiba de uma coisa, mamãe: <strong className="text-white">você não está sozinha.</strong></span>
             </p>
             <p className="flex items-start gap-2">
-              <span className="text-primary mt-1">✓</span>
+              <span className="text-primary mt-0.5">✓</span>
               <span>Você gerou uma vida. Isso por si só já prova a força, o amor e a capacidade que existem dentro de você — mesmo nos dias em que o cansaço fala mais alto.</span>
             </p>
             <p className="flex items-start gap-2">
-              <span className="text-primary mt-1">✓</span>
+              <span className="text-primary mt-0.5">✓</span>
               <span>O <strong className="text-primary">Kit MamãeZen Vitalício</strong> foi criado para te dar segurança, orientação e tranquilidade na rotina com o seu bebê.</span>
             </p>
-            <p className="flex items-start gap-2 text-lg">
+            <p className="flex items-start gap-2 text-base md:text-lg">
               <span className="text-yellow-400">👉</span>
               <span className="font-semibold text-white">Garanta agora o acesso vitalício ao Kit MamãeZen. Essa é uma oportunidade única, criada para te ajudar exatamente no momento que você mais precisa.</span>
             </p>

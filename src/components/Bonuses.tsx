@@ -66,22 +66,22 @@ const Bonuses = () => {
   }, 0);
 
   return (
-    <section id="tecnicas" className="py-16 md:py-24 px-4 bg-gradient-to-b from-[#0f0f1a] via-[#1a1a2e] to-[#0f0f1a] relative overflow-hidden">
+    <section id="tecnicas" className="py-12 md:py-20 px-4 bg-gradient-to-b from-[#0f0f1a] via-[#1a1a2e] to-[#0f0f1a] relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-[100px]" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-500/20 rounded-full blur-[120px]" />
       </div>
       
-      <div className="container mx-auto max-w-7xl relative z-10">
+      <div className="container mx-auto max-w-6xl relative z-10">
         {/* Header */}
-        <div className="text-center mb-12 md:mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-primary to-pink-600 text-white rounded-full font-bold mb-6 text-sm shadow-lg shadow-primary/30">
-            <Shield className="w-5 h-5" />
+        <div className="text-center mb-10 md:mb-14 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary to-pink-600 text-white rounded-full font-bold mb-5 text-xs md:text-sm shadow-lg shadow-primary/30">
+            <Shield className="w-4 h-4" />
             <span>🎁 BÔNUS EXCLUSIVOS INCLUSOS</span>
           </div>
           
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4 leading-tight px-2">
             <span className="text-white">5 Técnicas Secretas</span>
             <br />
             <span className="bg-gradient-to-r from-primary via-pink-500 to-primary bg-clip-text text-transparent">
@@ -89,13 +89,13 @@ const Bonuses = () => {
             </span>
           </h2>
           
-          <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed px-2">
             Métodos <span className="text-primary font-semibold">testados e aprovados</span> por mais de <span className="text-white font-bold">3.800 mães</span> que transformaram sua jornada materna
           </p>
         </div>
 
         {/* Technique Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-10">
           {techniques.map((technique, index) => (
             <Card 
               key={index}

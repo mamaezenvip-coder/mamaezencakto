@@ -2,18 +2,18 @@ import { Sparkles } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-12 px-4 bg-[#0f0f1a] text-white border-t border-white/10">
-      <div className="container mx-auto max-w-7xl">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+    <footer className="py-10 px-4 bg-[#0f0f1a] text-white border-t border-white/10">
+      <div className="container mx-auto max-w-6xl">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
           {/* Logo and description */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Sparkles className="text-primary" size={24} />
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-pink-500 bg-clip-text text-transparent">
-                Mamãe Zen
+              <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-pink-500 bg-clip-text text-transparent">
+                MamãeZen
               </h3>
             </div>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm leading-relaxed">
               App premium de maternidade. Tudo que você precisa para cuidar 
               do seu bebê com segurança e tranquilidade.
             </p>
@@ -21,11 +21,11 @@ const Footer = () => {
 
           {/* Links */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-white">Links Rápidos</h4>
+            <h4 className="font-semibold text-white text-sm">Links rápidos</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <a href="#tecnicas" className="hover:text-primary transition-colors">
-                  Técnicas Exclusivas
+                  Técnicas exclusivas
                 </a>
               </li>
               <li>
@@ -35,12 +35,12 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/privacidade" className="hover:text-primary transition-colors">
-                  Política de Privacidade
+                  Política de privacidade
                 </a>
               </li>
               <li>
                 <a href="/termos" className="hover:text-primary transition-colors">
-                  Termos de Uso
+                  Termos de uso
                 </a>
               </li>
             </ul>
@@ -48,7 +48,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-white">Suporte</h4>
+            <h4 className="font-semibold text-white text-sm">Suporte</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <a href="mailto:mamaezen.vip@gmail.com" className="hover:text-primary transition-colors">
@@ -71,9 +71,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="pt-8 border-t border-white/10 text-center text-sm text-gray-400">
-          <p>© 2025 Mamãe Zen. Todos os direitos reservados.</p>
-          <p className="mt-2">Desenvolvido com ❤️ para mães do mundo todo</p>
+        <div className="pt-6 border-t border-white/10 text-center text-xs text-gray-500">
+          <p>© 2025 MamãeZen. Todos os direitos reservados.</p>
+          <p className="mt-1">Desenvolvido com ❤️ para mães do mundo todo</p>
         </div>
       </div>
     </footer>
