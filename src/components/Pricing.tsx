@@ -20,10 +20,6 @@ const Pricing = () => {
     window.open('https://pay.kirvano.com/ffe6e704-5057-4d62-8658-909d09cbb054', '_blank');
   };
 
-  const handleMensalClick = () => {
-    trackClick('cta_mensal');
-    window.open('https://pay.kirvano.com/d5b9bd49-16d8-4039-b097-0c428eb0b0f5', '_blank');
-  };
 
   return (
     <section id="oferta" className="py-6 md:py-20 px-3 bg-[#1a1a2e]">
@@ -137,38 +133,6 @@ const Pricing = () => {
                 </div>
               </div>
 
-              {/* Monthly Option */}
-              <div className="text-center p-4 md:p-6 bg-[#1a1a2e] backdrop-blur rounded-2xl border-2 border-primary/30 shadow-lg">
-                <p className="text-xs md:text-base text-gray-400 mb-2">
-                  Prefere pagar mensalmente?
-                </p>
-                
-                <div className="mb-2">
-                  <div className="inline-flex items-baseline gap-1 justify-center">
-                    <span className="text-lg md:text-2xl font-medium text-gray-500 line-through">
-                      R$ 29,90
-                    </span>
-                  </div>
-                  <div className="mt-1">
-                    <span className="text-3xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                      R$ 19,99
-                    </span>
-                    <span className="text-base md:text-lg text-gray-400">/mês</span>
-                  </div>
-                </div>
-                
-                <p className="text-xs md:text-sm text-gray-500 mb-4">
-                  Após o primeiro período: R$ 29,90/mês
-                </p>
-                
-                <Button 
-                  size="lg" 
-                  className="w-full text-xs md:text-base py-4 md:py-6 bg-gradient-primary text-white hover:scale-105 transition-all shadow-lg rounded-xl font-bold border-0"
-                  onClick={handleMensalClick}
-                >
-                  💝 Começar por R$ 19,99/mês
-                </Button>
-              </div>
             </div>
           </div>
         </Card>
