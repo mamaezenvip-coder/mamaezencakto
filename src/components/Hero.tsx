@@ -29,26 +29,29 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-6 md:gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left space-y-4 md:space-y-6 animate-fade-in order-2 lg:order-1">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary to-pink-600 text-white rounded-full font-bold text-xs md:text-sm shadow-lg shadow-primary/30">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary to-pink-600 text-white rounded-full font-body font-semibold text-xs md:text-sm shadow-lg shadow-primary/30 tracking-wide uppercase">
               <Shield className="w-4 h-4" />
-              <span>🚀 KIT VITALÍCIO MAMAEZEN FUNDADORA</span>
+              <span>Kit Vitalício MamãeZen Fundadora</span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
-              <span className="text-white">Tudo Que Sua</span>
-              <br />
-              <span className="bg-gradient-to-r from-primary via-pink-500 to-primary bg-clip-text text-transparent">
-                Maternidade Precisa
+            <h1 className="leading-tight">
+              <span className="block font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white italic">
+                Sua Maternidade
               </span>
-              <br />
-              <span className="text-gray-300 text-xl sm:text-2xl md:text-3xl font-bold">
-                em Um App Só
+              <span className="block font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black bg-gradient-to-r from-primary via-pink-400 to-primary bg-clip-text text-transparent italic">
+                Merece Paz
               </span>
             </h1>
 
-            <p className="text-sm md:text-lg text-gray-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              <span className="text-primary font-semibold">6 módulos completos</span> + <span className="text-white font-semibold">5 técnicas exclusivas</span> por apenas <span className="text-green-400 font-bold">R$ 49,90</span> — pagamento único, acesso vitalício.
+            <p className="font-elegant text-lg md:text-2xl text-gray-300 max-w-xl mx-auto lg:mx-0 leading-relaxed tracking-wide">
+              Descubra o segredo de <span className="text-primary font-semibold">+10.000 mães</span> que transformaram suas maternidades com nosso kit exclusivo.
             </p>
+
+            <div className="flex items-center gap-3 justify-center lg:justify-start">
+              <span className="font-body text-gray-500 line-through text-lg">R$ 197</span>
+              <span className="font-display text-3xl md:text-4xl font-bold text-white">R$ 49,90</span>
+              <span className="font-body text-xs md:text-sm bg-green-500/20 text-green-400 px-3 py-1 rounded-full font-semibold">-75% OFF</span>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
               <Button 

@@ -20,13 +20,13 @@ const FinalCTA = () => {
 
       <div className="container mx-auto max-w-4xl text-center relative z-10 px-2">
         <div className="space-y-4 md:space-y-8 animate-fade-in">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight">
-            Sua Maternidade Merece Ser Mais Tranquila
+          <h2 className="font-display text-3xl sm:text-5xl md:text-6xl font-bold leading-tight italic">
+            Sua Maternidade Merece Paz
           </h2>
           
-          <p className="text-sm md:text-lg lg:text-xl opacity-90 max-w-2xl mx-auto leading-relaxed">
+          <p className="font-elegant text-base md:text-xl lg:text-2xl opacity-90 max-w-2xl mx-auto leading-relaxed tracking-wide">
             Junte-se a mais de 10.000 mães que já transformaram suas maternidades 
-            com o Mamãe Zen. Segurança, conhecimento e paz em um único app.
+            com o MamãeZen. Segurança, conhecimento e paz em um único kit.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center px-2">
