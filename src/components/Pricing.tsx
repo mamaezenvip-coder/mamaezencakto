@@ -162,7 +162,7 @@ const Pricing = () => {
         {/* Social Proof */}
         <div className="mt-6 md:mt-10 text-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
           <p className="text-xs md:text-base text-gray-400 mb-3 px-2">
-            ✨ Mais de 10.000 mães já transformaram suas maternidades
+            ✨ Mais de 3.800 mães já transformaram suas maternidades
           </p>
           <div className="flex items-center justify-center gap-2 flex-wrap px-2">
             <div className="flex -space-x-2">
@@ -176,7 +176,7 @@ const Pricing = () => {
               ))}
             </div>
             <p className="text-xs md:text-sm text-white font-medium">
-              +10.000 mães satisfeitas
+              +3.800 mães satisfeitas
             </p>
           </div>
         </div>

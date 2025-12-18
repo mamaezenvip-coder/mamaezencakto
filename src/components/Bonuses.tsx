@@ -90,7 +90,7 @@ const Bonuses = () => {
           </h2>
           
           <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Métodos <span className="text-primary font-semibold">testados e aprovados</span> por mais de <span className="text-white font-bold">10.000 mães</span> que transformaram sua jornada materna
+            Métodos <span className="text-primary font-semibold">testados e aprovados</span> por mais de <span className="text-white font-bold">3.800 mães</span> que transformaram sua jornada materna
           </p>
         </div>
 

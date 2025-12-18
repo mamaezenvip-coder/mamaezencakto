@@ -24,8 +24,8 @@ const FinalCTA = () => {
             Sua Maternidade Merece Paz
           </h2>
           
-          <p className="font-elegant text-base md:text-xl lg:text-2xl opacity-90 max-w-2xl mx-auto leading-relaxed tracking-wide">
-            Junte-se a mais de 10.000 mães que já transformaram suas maternidades 
+          <p className="font-body text-sm md:text-lg opacity-90 max-w-2xl mx-auto leading-relaxed">
+            Junte-se a mais de <span className="font-semibold">3.800 mães</span> que já transformaram suas maternidades 
             com o MamãeZen. Segurança, conhecimento e paz em um único kit.
           </p>
 
