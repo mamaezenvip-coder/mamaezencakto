@@ -17,7 +17,7 @@ const includes = [
 const Pricing = () => {
   const handleVitalicioClick = () => {
     trackClick('cta_vitalicio_principal');
-    window.open('https://pay.kirvano.com/ffe6e704-5057-4d62-8658-909d09cbb054', '_blank');
+    window.open('https://pay.cakto.com.br/c88zju2_683076', '_blank');
   };
 
 
@@ -48,21 +48,20 @@ const Pricing = () => {
 
         {/* Header */}
         <div className="text-center mb-6 md:mb-12 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-primary text-white rounded-full font-bold mb-3 text-xs md:text-base shadow-lg">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-primary text-white rounded-full font-body font-semibold mb-4 text-xs md:text-sm shadow-lg tracking-wide uppercase">
             <Sparkles className="w-4 h-4 md:w-5 md:h-5 animate-pulse" />
-            <span>🚀 VITALÍCIO MAMAEZEN FUNDADORA</span>
+            <span>Kit Vitalício MamãeZen Fundadora</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 px-2 leading-tight">
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              6 Módulos + 5 Técnicas Exclusivas
+          <h2 className="mb-4 px-2 leading-tight">
+            <span className="block font-display text-3xl sm:text-5xl md:text-6xl font-bold bg-gradient-primary bg-clip-text text-transparent italic">
+              6 Módulos + 5 Técnicas
             </span>
-            <br />
-            <span className="text-white">
-              Por Apenas R$ 49,90
+            <span className="block font-display text-4xl sm:text-6xl md:text-7xl font-black text-white mt-2">
+              R$ 49,90
             </span>
           </h2>
-          <p className="text-sm md:text-lg text-gray-400 max-w-2xl mx-auto px-2">
-            Acesso vitalício como fundadora • Investimento único para toda a vida
+          <p className="font-elegant text-base md:text-xl text-gray-400 max-w-2xl mx-auto px-2 tracking-wide">
+            Acesso vitalício como fundadora • Pagamento único para toda a vida
           </p>
         </div>
 

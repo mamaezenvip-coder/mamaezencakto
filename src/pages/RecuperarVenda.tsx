@@ -136,7 +136,7 @@ const RecuperarVenda = () => {
               <Button 
                 size="lg" 
                 className="w-full md:w-auto text-lg py-7 px-12 bg-white text-primary hover:bg-white/95 hover:scale-105 transition-all shadow-xl font-bold rounded-xl border-0"
-                onClick={() => window.open('https://pay.kirvano.com/ffe6e704-5057-4d62-8658-909d09cbb054', '_blank')}
+                onClick={() => window.open('https://pay.cakto.com.br/c88zju2_683076', '_blank')}
               >
                 💝 Sim! Quero Ter Mais Confiança Agora
               </Button>
