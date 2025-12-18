@@ -9,37 +9,35 @@ const FinalCTA = () => {
   };
 
   return (
-    <section className="py-8 md:py-20 px-3 bg-gradient-primary text-white relative overflow-hidden">
+    <section className="py-10 md:py-16 px-4 bg-gradient-primary text-white relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-4 md:top-10 left-4 md:left-10 opacity-20 animate-float">
-        <Sparkles className="w-8 h-8 md:w-[50px] md:h-[50px]" />
+        <Sparkles className="w-8 h-8 md:w-12 md:h-12" />
       </div>
       <div className="absolute bottom-4 md:bottom-10 right-4 md:right-10 opacity-20 animate-float" style={{ animationDelay: "1s" }}>
-        <Heart className="w-8 h-8 md:w-[50px] md:h-[50px]" />
+        <Heart className="w-8 h-8 md:w-12 md:h-12" />
       </div>
 
-      <div className="container mx-auto max-w-4xl text-center relative z-10 px-2">
-        <div className="space-y-4 md:space-y-8 animate-fade-in">
-          <h2 className="font-display text-3xl sm:text-5xl md:text-6xl font-bold leading-tight italic">
+      <div className="container mx-auto max-w-3xl text-center relative z-10">
+        <div className="space-y-5 md:space-y-6 animate-fade-in">
+          <h2 className="font-display text-2xl sm:text-4xl md:text-5xl font-bold leading-tight italic px-2">
             Sua Maternidade Merece Paz
           </h2>
           
-          <p className="font-body text-sm md:text-lg opacity-90 max-w-2xl mx-auto leading-relaxed">
+          <p className="font-body text-sm md:text-base opacity-90 max-w-xl mx-auto leading-relaxed px-2">
             Junte-se a mais de <span className="font-semibold">3.800 mães</span> que já transformaram suas maternidades 
             com o MamãeZen. Segurança, conhecimento e paz em um único kit.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center px-2">
-            <Button 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/95 hover:scale-105 transition-all text-sm md:text-lg px-5 md:px-8 py-5 md:py-7 shadow-xl font-bold w-full sm:w-auto border-0"
-              onClick={scrollToOffer}
-            >
-              ✨ Sim, Quero Acesso Vitalício Agora
-            </Button>
-          </div>
+          <Button 
+            size="lg" 
+            className="bg-white text-primary hover:bg-white/95 hover:scale-105 transition-all text-base px-8 py-6 shadow-xl font-bold w-full sm:w-auto border-0"
+            onClick={scrollToOffer}
+          >
+            ✨ Sim, quero acesso vitalício agora
+          </Button>
 
-          <div className="pt-4 md:pt-8 space-y-1.5 text-xs md:text-sm opacity-75">
+          <div className="pt-4 space-y-1.5 text-xs md:text-sm opacity-80">
             <p>✓ Acesso imediato após a compra</p>
             <p>✓ Garantia incondicional de 30 dias</p>
             <p>✓ Suporte dedicado em português</p>

@@ -43,21 +43,21 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section className="py-10 md:py-16 px-3 bg-[#1a1a2e]">
+    <section className="py-10 md:py-16 px-4 bg-[#1a1a2e]">
       <div className="container mx-auto max-w-3xl">
-        <div className="text-center mb-8 md:mb-10 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/20 text-primary rounded-full font-body font-semibold text-xs mb-4">
-            <HelpCircle className="w-3.5 h-3.5" />
-            <span>Dúvidas Frequentes</span>
+        <div className="text-center mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 text-primary rounded-full font-body font-semibold text-xs mb-4">
+            <HelpCircle className="w-4 h-4" />
+            <span>Dúvidas frequentes</span>
           </div>
           
-          <h2 className="font-display text-2xl sm:text-4xl md:text-5xl font-bold mb-3 italic">
+          <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-3 italic px-2">
             <span className="text-white">Perguntas </span>
             <span className="bg-gradient-to-r from-primary via-pink-400 to-primary bg-clip-text text-transparent">
               Respondidas
             </span>
           </h2>
-          <p className="font-body text-sm md:text-base text-gray-400">
+          <p className="font-body text-sm md:text-base text-gray-400 px-2">
             Tire suas dúvidas antes de garantir seu acesso
           </p>
         </div>
@@ -67,20 +67,20 @@ const FAQ = () => {
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="bg-[#252542] border border-primary/20 rounded-xl px-4 md:px-6 overflow-hidden"
+              className="bg-[#252542] border border-primary/20 rounded-xl px-4 md:px-5 overflow-hidden"
             >
               <AccordionTrigger className="font-body text-sm md:text-base font-semibold text-white hover:text-primary transition-colors py-4 text-left">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="font-body text-xs md:text-sm text-gray-400 leading-relaxed pb-4">
+              <AccordionContent className="font-body text-sm text-gray-400 leading-relaxed pb-4">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
 
-        <div className="mt-8 text-center">
-          <p className="font-body text-xs md:text-sm text-gray-500">
+        <div className="mt-6 text-center">
+          <p className="font-body text-xs text-gray-500">
             Ainda tem dúvidas? Fale conosco pelo WhatsApp
           </p>
         </div>

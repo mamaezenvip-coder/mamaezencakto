@@ -11,16 +11,16 @@ const comparisons = [
 
 const ValueComparison = () => {
   return (
-    <section className="py-10 md:py-16 px-3 bg-[#0f0f1a]">
+    <section className="py-10 md:py-16 px-4 bg-[#0f0f1a]">
       <div className="container mx-auto max-w-5xl">
-        <div className="text-center mb-8 md:mb-12 animate-fade-in">
-          <h2 className="font-display text-2xl sm:text-4xl md:text-5xl font-bold mb-3 italic">
+        <div className="text-center mb-8 md:mb-10 animate-fade-in">
+          <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-3 italic px-2">
             <span className="text-white">Quanto Você </span>
             <span className="bg-gradient-to-r from-primary via-pink-400 to-primary bg-clip-text text-transparent">
               Economiza?
             </span>
           </h2>
-          <p className="font-body text-sm md:text-base text-gray-400 max-w-2xl mx-auto">
+          <p className="font-body text-sm md:text-base text-gray-400 max-w-xl mx-auto px-2">
             Veja quanto você gastaria para ter acesso a tudo isso separadamente
           </p>
         </div>
