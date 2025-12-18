@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import Hero from "@/components/Hero";
 import Bonuses from "@/components/Bonuses";
+import ValueComparison from "@/components/ValueComparison";
 import Pricing from "@/components/Pricing";
+import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import SocialProofNotifications from "@/components/SocialProofNotifications";
@@ -18,7 +20,9 @@ const Index = () => {
       <CountdownTimer />
       <Hero />
       <Bonuses />
+      <ValueComparison />
       <Pricing />
+      <FAQ />
       <FinalCTA />
       <Footer />
       <SocialProofNotifications />

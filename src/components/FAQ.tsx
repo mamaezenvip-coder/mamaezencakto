@@ -4,79 +4,86 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { HelpCircle } from "lucide-react";
 
 const faqs = [
   {
-    question: "Como funciona o acesso vitalício?",
-    answer: "Você paga uma única vez R$ 49,90 e tem acesso para sempre a todos os 6 módulos, incluindo todas as atualizações futuras. Sem mensalidades, sem custos ocultos. Todas as atualizações são por conta da equipe MamãeZen!"
+    question: "Como funciona o acesso ao Kit MamãeZen?",
+    answer: "Após a confirmação do pagamento, você recebe imediatamente o acesso por e-mail. O MamãeZen funciona como um Progressive Web App (PWA), ou seja, você acessa direto pelo navegador do celular, sem precisar baixar nada da loja. Funciona em qualquer celular, tablet ou computador."
   },
   {
-    question: "O app funciona fora do Brasil?",
-    answer: "Sim! O Mamãe Zen foi especialmente desenvolvido para mães que moram fora do Brasil. Funciona em qualquer país e o botão de emergência localiza hospitais pediátricos na sua região."
+    question: "O acesso é realmente vitalício?",
+    answer: "Sim! Você paga uma única vez R$ 49,90 e tem acesso para sempre. Isso inclui todas as atualizações futuras que fizermos no app, sem custo adicional. Diferente de outros apps que cobram mensalidade."
   },
   {
-    question: "Preciso de internet para usar?",
-    answer: "A maioria dos guias e conteúdos podem ser acessados offline após o primeiro download. Apenas o botão de emergência e atualizações precisam de internet."
+    question: "Como funciona a garantia de 30 dias?",
+    answer: "Simples: você testa o Kit MamãeZen por 30 dias. Se por qualquer motivo não gostar ou achar que não é para você, basta nos enviar um e-mail e devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia."
   },
   {
-    question: "E se eu não gostar?",
-    answer: "Oferecemos 7 dias de garantia total. Se por qualquer motivo você não estiver satisfeita, devolvemos 100% do seu investimento, sem perguntas."
+    question: "O conteúdo é seguro e confiável?",
+    answer: "Todo o conteúdo do MamãeZen foi desenvolvido e revisado por profissionais da área de saúde materno-infantil. As orientações seguem as recomendações da Sociedade Brasileira de Pediatria e órgãos de saúde."
   },
   {
-    question: "O guia de medicamentos é confiável?",
-    answer: "Sim! Foi desenvolvido por pediatras e farmacêuticos com base em evidências científicas. Mas sempre consulte seu pediatra antes de administrar qualquer medicamento."
+    question: "Serve para mães de primeira viagem?",
+    answer: "O Kit foi criado especialmente pensando em mães de primeira viagem! Mas também é muito útil para mães experientes que querem ter tudo organizado em um só lugar. O app te guia passo a passo em cada fase do desenvolvimento do bebê."
+  },
+  {
+    question: "Funciona offline?",
+    answer: "Sim! Depois de acessar uma vez, o conteúdo fica salvo no seu celular e você pode consultar mesmo sem internet. Perfeito para emergências ou quando estiver em locais sem sinal."
   },
   {
     question: "Posso usar em mais de um dispositivo?",
-    answer: "Sim! Você pode acessar sua conta em quantos dispositivos quiser - celular, tablet, etc."
+    answer: "Sim! Seu acesso é por conta, não por dispositivo. Você pode acessar do celular, tablet e computador, basta fazer login com o mesmo e-mail."
   },
   {
-    question: "Como funciona o botão de emergência?",
-    answer: "Com um clique, o app localiza os hospitais pediátricos mais próximos de você e traça a rota mais segura usando GPS. Perfeito para momentos de urgência."
+    question: "Por que está tão barato?",
+    answer: "Estamos em fase de lançamento e queremos que mais mães tenham acesso ao Kit. Por isso, oferecemos o preço especial de fundadora (R$ 49,90 ao invés de R$ 197). Mas esse valor promocional é por tempo limitado."
   },
-  {
-    question: "Recebo atualizações de conteúdo?",
-    answer: "Sim! Estamos constantemente adicionando novos guias, áudios e e-books. Todas as atualizações são gratuitas e automáticas, por conta da equipe MamãeZen."
-  },
-  {
-    question: "Preciso baixar o app?",
-    answer: "Não! O MamãeZen funciona como PWA (Progressive Web App). Você acessa direto pelo navegador, sem ocupar espaço no celular. Todas as atualizações são automáticas e você sempre terá a versão mais recente!"
-  }
 ];
 
 const FAQ = () => {
   return (
-    <section className="py-12 md:py-20 px-4 bg-background">
-      <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-10 md:mb-12 animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
-            <span className="text-foreground">Dúvidas </span>
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Frequentes
+    <section className="py-10 md:py-16 px-3 bg-[#1a1a2e]">
+      <div className="container mx-auto max-w-3xl">
+        <div className="text-center mb-8 md:mb-10 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/20 text-primary rounded-full font-body font-semibold text-xs mb-4">
+            <HelpCircle className="w-3.5 h-3.5" />
+            <span>Dúvidas Frequentes</span>
+          </div>
+          
+          <h2 className="font-display text-2xl sm:text-4xl md:text-5xl font-bold mb-3 italic">
+            <span className="text-white">Perguntas </span>
+            <span className="bg-gradient-to-r from-primary via-pink-400 to-primary bg-clip-text text-transparent">
+              Respondidas
             </span>
           </h2>
-          <p className="text-base md:text-lg text-muted-foreground px-4">
-            Tudo que você precisa saber antes de garantir seu acesso
+          <p className="font-body text-sm md:text-base text-gray-400">
+            Tire suas dúvidas antes de garantir seu acesso
           </p>
         </div>
 
-        <Accordion type="single" collapsible className="space-y-3 md:space-y-4">
+        <Accordion type="single" collapsible className="space-y-3">
           {faqs.map((faq, index) => (
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="bg-gradient-card border-2 rounded-2xl px-4 md:px-6 animate-fade-in"
-              style={{ animationDelay: `${index * 0.05}s` }}
+              className="bg-[#252542] border border-primary/20 rounded-xl px-4 md:px-6 overflow-hidden"
             >
-              <AccordionTrigger className="text-left text-base md:text-lg font-semibold hover:text-primary py-4">
+              <AccordionTrigger className="font-body text-sm md:text-base font-semibold text-white hover:text-primary transition-colors py-4 text-left">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed text-sm md:text-base pb-4">
+              <AccordionContent className="font-body text-xs md:text-sm text-gray-400 leading-relaxed pb-4">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
+
+        <div className="mt-8 text-center">
+          <p className="font-body text-xs md:text-sm text-gray-500">
+            Ainda tem dúvidas? Fale conosco pelo WhatsApp
+          </p>
+        </div>
       </div>
     </section>
   );
