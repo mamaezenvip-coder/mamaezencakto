@@ -94,14 +94,14 @@ const Bonuses = () => {
           </p>
         </div>
 
-        {/* Technique Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-10">
+        {/* Technique Cards - Horizontal Layout */}
+        <div className="flex flex-col gap-6 mb-10">
           {techniques.map((technique, index) => (
             <Card 
               key={index}
               className={`relative overflow-hidden bg-gradient-to-br from-[#1e1e35] to-[#151528] border-2 transition-all duration-500 group cursor-pointer ${
                 hoveredIndex === index 
-                  ? 'border-primary shadow-2xl shadow-primary/30 scale-[1.02]' 
+                  ? 'border-primary shadow-2xl shadow-primary/30 scale-[1.01]' 
                   : 'border-white/10 hover:border-primary/50'
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
@@ -109,57 +109,66 @@ const Bonuses = () => {
               onMouseLeave={() => setHoveredIndex(null)}
               onClick={() => trackClick(`technique_card_${index}_${technique.title}`)}
             >
-              {/* Badge */}
-              <div className="absolute top-4 right-4 z-20">
-                <span className="px-3 py-1 bg-gradient-to-r from-primary to-pink-600 text-white text-xs font-bold rounded-full shadow-lg">
-                  {technique.badge}
-                </span>
-              </div>
-
-              {/* Image Container */}
-              <div className="relative h-56 md:h-64 overflow-hidden">
-                <img 
-                  src={technique.image} 
-                  alt={technique.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1e1e35] via-transparent to-transparent" />
-                
-                {/* Value Badge */}
-                <div className="absolute bottom-4 left-4">
-                  <div className="flex items-center gap-2">
-                    <span className="text-gray-400 text-sm line-through">{technique.value}</span>
-                    <span className="px-3 py-1 bg-green-500/20 text-green-400 text-sm font-bold rounded-full border border-green-500/30">
-                      GRÁTIS
+              {/* Horizontal Layout: Image Left, Content Right */}
+              <div className="flex flex-col md:flex-row">
+                {/* Image Container - Left Side */}
+                <div className="relative w-full md:w-2/5 h-56 md:h-auto md:min-h-[280px] overflow-hidden flex-shrink-0">
+                  <img 
+                    src={technique.image} 
+                    alt={technique.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#1e1e35]/80 hidden md:block" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1e1e35] via-transparent to-transparent md:hidden" />
+                  
+                  {/* Badge - Mobile */}
+                  <div className="absolute top-4 left-4 md:hidden">
+                    <span className="px-3 py-1 bg-gradient-to-r from-primary to-pink-600 text-white text-xs font-bold rounded-full shadow-lg">
+                      {technique.badge}
                     </span>
                   </div>
                 </div>
-              </div>
 
-              {/* Content */}
-              <div className="p-5 md:p-6 space-y-4">
-                <div>
-                  <h3 className="font-bold text-lg md:text-xl text-white leading-tight mb-1">
-                    {technique.title}
-                  </h3>
-                  <p className="text-primary text-sm font-medium flex items-center gap-1">
-                    <Sparkles className="w-4 h-4" />
-                    {technique.subtitle}
+                {/* Content - Right Side */}
+                <div className="flex-1 p-5 md:p-8 flex flex-col justify-center relative">
+                  {/* Badge - Desktop */}
+                  <div className="absolute top-4 right-4 hidden md:block">
+                    <span className="px-3 py-1 bg-gradient-to-r from-primary to-pink-600 text-white text-xs font-bold rounded-full shadow-lg">
+                      {technique.badge}
+                    </span>
+                  </div>
+
+                  <div className="mb-3">
+                    <h3 className="font-black text-xl md:text-2xl lg:text-3xl text-white leading-tight mb-2">
+                      {technique.title}
+                    </h3>
+                    <p className="text-primary text-sm md:text-base font-medium flex items-center gap-1">
+                      <Sparkles className="w-4 h-4" />
+                      {technique.subtitle}
+                    </p>
+                  </div>
+                  
+                  <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
+                    {technique.description}
                   </p>
-                </div>
-                
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  {technique.description}
-                </p>
 
-                {/* Highlights */}
-                <div className="space-y-2 pt-2">
-                  {technique.highlights.map((highlight, hIndex) => (
-                    <div key={hIndex} className="flex items-center gap-2 text-sm">
-                      <Check className="w-4 h-4 text-green-400 flex-shrink-0" />
-                      <span className="text-gray-300">{highlight}</span>
-                    </div>
-                  ))}
+                  {/* Highlights */}
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {technique.highlights.map((highlight, hIndex) => (
+                      <div key={hIndex} className="flex items-center gap-1.5 text-sm bg-white/5 px-3 py-1.5 rounded-full">
+                        <Check className="w-4 h-4 text-green-400 flex-shrink-0" />
+                        <span className="text-gray-300">{highlight}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Value Badge */}
+                  <div className="flex items-center gap-3">
+                    <span className="text-gray-400 text-sm line-through">{technique.value}</span>
+                    <span className="px-4 py-1.5 bg-green-500/20 text-green-400 text-sm font-bold rounded-full border border-green-500/30">
+                      GRÁTIS NO KIT
+                    </span>
+                  </div>
                 </div>
               </div>
 
