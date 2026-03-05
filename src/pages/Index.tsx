@@ -8,6 +8,9 @@ import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import SocialProofNotifications from "@/components/SocialProofNotifications";
 import CountdownTimer from "@/components/CountdownTimer";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
+import SalesChatbot from "@/components/SalesChatbot";
+import ScrollNudge from "@/components/ScrollNudge";
 import { trackPageView } from "@/lib/tracking";
 
 const Index = () => {
@@ -26,6 +29,9 @@ const Index = () => {
       <FinalCTA />
       <Footer />
       <SocialProofNotifications />
+      <ExitIntentPopup />
+      <SalesChatbot />
+      <ScrollNudge />
     </main>
   );
 };
